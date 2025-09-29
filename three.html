@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>پرسش از کاربر</title>
+</head>
+
+<body>
+    <script>
+        let age = prompt("سن خود را وارد کنید:");
+
+        age = Number(age); 
+
+        if (isNaN(age)) {
+            console.log("لطفاً یک عدد معتبر وارد کنید!");
+        } else if (age >= 18) {
+            console.log("خوش آمدید!");
+        } else {
+            console.log("دسترسی مجاز نیست! سن شما کمتر از 18 سال است.");
+        }
+
+    </script>
+</body>
+
+</html>
