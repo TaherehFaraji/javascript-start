@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        let Numbers = [22, 55, 33, 42, 9]
+        let sum = 0
+        for (let i = 0; i < Numbers.length; i++) {
+            sum += Numbers[i]
+        }
+        console.log("جمع آرایه ها :", sum)
+
+        let people = ["Zahra", "Dorsa", "Helma"]
+        people[1] = "Tara"
+        console.log(people);
+        console.log(people.includes("Fatemeh"));
+        console.log(people.indexOf("Helma"));
+
+        let car = {
+            name: "BenzMaybach",
+            model: "s680",
+            year: 2024
+        }
+        car.year = 2025
+        car.color = "black"
+        for (let key in car) {
+            console.log(key + ":" + car[key])
+        }
+
+        let books = [
+            {name:"عادت های اتمی" , auther:" جیمز کلیر"},
+            {name:"48 قانون قدرت" , auther:" رابرت گرین"},
+            {name:"اثر مرکب", auther:" دارن هاردی"}
+        ]
+        console.log(books)
+
+
+    </script>
+</body>
+
+</html>
