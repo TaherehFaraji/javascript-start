@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        function person(name = "Guest", age = "18") {
+            console.log("welcome " + name + age)
+        }
+
+        person("Ali");
+        person();
+
+        let maxNum = (a, b, c) => {
+            if (a > b, a > c) return a;
+            else if (b > a, b > c) return b;
+            else return c;
+        }
+        console.log(maxNum(5, 14, 23))
+
+        let counter = 0
+        function sum(n) {
+            counter++;
+            if (n === 1) return 1;
+            return n + sum(n - 1);
+        }
+        console.log(sum(7));
+        console.log(counter);
+    </script>
+</body>
+
+</html>
