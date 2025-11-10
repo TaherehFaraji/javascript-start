@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        let cars = ["bmw", "benz", "hyundai", "kmc"]
+
+        //method1
+        for (let i = 0; i < cars.length; i++) {
+            console.log(cars[i]);
+        }
+        //method2
+        for (let car of cars) {
+            console.log(car);
+        }
+        //method3
+        for (let index in cars) {
+            console.log(index);
+        }
+        //method4
+        cars.forEach(function (model, index) {
+            console.log(index, model);
+        })
+        //method5
+        cars.map(function (model) {
+            console.log(model);
+        })
+        //method6
+        let a = 0
+        while (a < cars.length) {
+            console.log(cars[a]);
+            a++;
+        }
+        //method6
+        let b = 0
+        do {
+            console.log(cars[b]);
+            b++;
+        } while (b < cars.length);
+
+
+    </script>
+</body>
+
+</html>
