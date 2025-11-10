@@ -6,15 +6,15 @@
         let Numbers = [22, 55, 33, 42, 9]
         let sum = 0
         for (let i = 0; i < Numbers.length; i++) {
-            sum += Numbers[i]
+            sum += Numbers[i] //sum=sum+Numbers[i]
         }
         console.log("جمع آرایه ها :", sum)
 
         let people = ["Zahra", "Dorsa", "Helma"]
         people[1] = "Tara"
         console.log(people);
-        console.log(people.includes("Fatemeh"));
-        console.log(people.indexOf("Helma"));
+        console.log(people.includes("Fatemeh")); //برای جستوجو در ارایه
+        console.log(people.indexOf("Helma"));// جستوجو اندیس
 
         let car = {
             name: "BenzMaybach",
@@ -27,6 +27,7 @@
             console.log(key + ":" + car[key])
         }
 
+        //ترکیب ارایه با ابجکت
         let books = [
             {name:"عادت های اتمی" , auther:" جیمز کلیر"},
             {name:"48 قانون قدرت" , auther:" رابرت گرین"},
@@ -34,6 +35,15 @@
         ]
         console.log(books)
 
+        let Num = [ 1, 2, 3, 4]
+        Num.pop(); // برداشتن عنصر از اخر
+        console.log(Num);
+        Num.push(5); // اضافه کردن عنصر به انتهای ارایه
+        console.log(Num);
+        Num.shift(); //اولین مقدار حذف میشود
+        console.log(Num);
+        Num.unshift(8); //اضافه کردن به اول ارایه
+        console.log(Num);
 
     </script>
 </body>
