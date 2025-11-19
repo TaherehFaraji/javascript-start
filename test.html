@@ -1,36 +1,65 @@
 <!DOCTYPE html>
 <html>
 <script>
-    function toFahrenheit(celsius) {
-       return (celsius * 9 / 5) + 32;
+    // function toFahrenheit(celsius) {
+    //     return (celsius * 9 / 5) + 32;
 
+    // }
+    // console.log(toFahrenheit(23));
+
+
+
+    // let score = 16
+
+    // if (score === 20) {
+    //     console.log("very good")
+    // } else if (score >15) {
+    //     console.log("good")
+    // } else {
+    //     console.log("very bad")
+    // }
+
+    // let a = 16
+
+    // switch (true) {
+    //     case (a === 20) :
+    //         console.log("very good");
+    //         break;
+    //     case (a > 15) :
+    //         console.log("good");
+    //         break;
+    //     default :
+    //     console.log("fail");
+    // }
+
+    // let score = [5, 15, 10, 15]
+
+    // function average(score) {
+    //     let sum = 0
+    //     for (let i = 0; i < score.length; i++) {
+    //         sum += score[i];
+    //     }
+    //     return sum / score.length;
+
+    // }
+
+    // console.log(average(score));
+
+    let number = 12
+    function isPrime(number) {
+        if (number<= 1) {
+            return false;
+        }
+        for (let i = 2; (1 < i && i < number); i++) {
+            if (number % i === 0) {
+                return false;
+            }
+        }
+        return true;
     }
-    console.log(toFahrenheit(23));
+    console.log(isPrime(number));
 
-    
 
-    let score = 16
-
-    if (score === 20) {
-        console.log("very good")
-    } else if (score >15) {
-        console.log("good")
-    } else {
-        console.log("very bad")
-    }
-
-    let a = 16
-
-    switch (true) {
-        case (a === 20) :
-            console.log("very good");
-            break;
-        case (a > 15) :
-            console.log("good");
-            break;
-        default :
-        console.log("fail");
-    }
 </script>
 
 </html>
