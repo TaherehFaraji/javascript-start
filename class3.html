@@ -1,18 +1,20 @@
 <!DOCTYPE html>
+
+<!-- کد برای مکث در اجرا و جلوگیری از استاپ شدن و نمایش خطا در کد -->
 <script>
 
-    // function heavyTask() {
-    //     let sum = 0
-    //     for (let i = 0; i < 2_000; i++) {
-    //         for (let j = 0; j < 1_000; j++) {
-    //             sum += i + j;
-    //         }
-    //     }
-    //     console.log(sum);
-    // }
-    // console.log("Start");
-    // heavyTask();
-    // console.log("End");
+    function heavyTask() {
+        let sum = 0
+        for (let i = 0; i < 2_000; i++) {
+            for (let j = 0; j < 1_000; j++) {
+                sum += i + j;
+            }
+        }
+        console.log(sum);
+    }
+    console.log("Start");
+    heavyTask();
+    console.log("End");
 
     ////////////////////////////////////
 

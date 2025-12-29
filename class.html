@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<!-- اتصال ایتم های جاوااسکریپت به اچ تی ام ال  -->
 <body>
     <p id="text">hello world!</p>
     <input type="color" id="color-picker">
@@ -11,6 +11,39 @@
         colorPicker.addEventListener("input" ,() => {
             text.style.color = colorPicker.value;
         })
-       
+
+        //////////////////////////////////////////////////////////////
+
+        // پیدا کردن id
+        document.getElementById("...");
+        // پیدا کردن class...ارایه گونه
+        document.getElementsByClassName("..");
+        //پیدا کردن تگ..ارایه گونه
+        document.getElementsByTagName("")
+        //پیدا کردن عنصر
+        document.querySelector(". ..");
+        document.querySelectorAll(". ...,#..,. ..");
+
+        //append اضافه کردن به تگ
+        //replace جایگزین کردن
+        name.innertext = "..."
+        name.innerHTML = "<P>..<P>"//تگ اصلی تغییر نمیکند و تگ داخلی عوض میشود.
+
+        //تغییرات پراپرتی های یک تگ
+        name.setAttribute ("attribute","مقدار جدید");
+        name.style.color = "..";
+        
+        //اضافه یا کم کردن عنصر اچ تی ام ال
+        document.createElement("..");//ساخت یک تگ خالی
+        name.appendChild ();
+        name.removeChild();
+        name.fristElementchild
+
+        //دسترسی به مقدار متغییر
+        name.value
+
+        //انجام یک کار به ازاری انجام کار دیگری
+        name.addEventListener("کار اول",()=>{});
+
     </script>
 </body>
