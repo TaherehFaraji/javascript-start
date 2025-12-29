@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<script>
+
+    // function heavyTask() {
+    //     let sum = 0
+    //     for (let i = 0; i < 2_000; i++) {
+    //         for (let j = 0; j < 1_000; j++) {
+    //             sum += i + j;
+    //         }
+    //     }
+    //     console.log(sum);
+    // }
+    // console.log("Start");
+    // heavyTask();
+    // console.log("End");
+
+    ////////////////////////////////////
+
+    console.log("Start");
+    function heavyTask() {
+        return new Promise((resolve) => {
+            let sum = 0
+            for (let i = 0; i < 2_000; i++) {
+                for (let j = 0; j < 1_000; j++) {
+                    sum += i + j;
+                }
+            }
+            resolve(sum);
+        });
+    }
+
+    heavyTask().then(result => {
+        console.log("sum" + result);
+    })
+    console.log("End");
+
+</script>
