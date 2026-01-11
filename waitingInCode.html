@@ -66,4 +66,21 @@
         .then(data => console.log("Data:", data));
 
     console.log("End");
+    /////////////////////////////////////////////////////////
+
+    function wait(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    async function example() {
+        console.log("step1");
+        await wait(1000);
+
+        console.log("step2");
+        await wait(1000);
+
+        console.log("step3");
+    }
+
+    example();
 </script>

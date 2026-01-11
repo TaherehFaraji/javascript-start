@@ -1,0 +1,25 @@
+<html>
+<script>
+    localStorage.setItem("theme", "dark")
+    localStorage.removeItem("theme")
+    localStorage.clear()
+    /////////////////////////////////////////////////////
+    //تبدیل ارایه یا ابجکت به جیسون و برعکس
+    const languages = ["JS", "Python", "PHP"]
+
+    localStorage.setItem("language", JSON.stringify(languages))
+
+    const x = JSON.parse(localStorage.getItem("language"))
+    console.log(x[1])
+
+    ///////////////////////////////////////////////////////
+
+    //default mood
+    const isLoggedIn = localStorage.getItem("isLoggedIn") || "false"
+
+    /////////////////////////////////////////////////////
+    
+
+</script>
+
+</html>
