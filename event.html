@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html>
+<!-- inline -->
+<body onload="window.alert('onloadEvent!')">
 
-<body>
     <button id="btn">click me</button>
-    <input id="input" type="text">
-    
+
+    <input id="input" type="text" onfocus="ShowMessage()">
+
 </body>
-<script src="script.js"></script>
+<script>
+    let btn = document.getElementById("btn")
+
+    btn.addEventListener("click", () => {
+        let counter = 0;
+        counter++;
+        console.log(counter);
+    })
+
+    let input = document.getElementById("input")
+
+    input.addEventListener("input", (e) => {
+        if (e.target.value === "test") {
+            console.log("error");
+        }
+    })
+
+    input.addEventListener("input", (e) => {
+        if (e.target.value.includes(" ")) {
+            console.log("error");
+        }
+    })
+
+    function ShowMessage () {
+        console.log("Message from function!")
+    }
+</script>
 
 </html>
